@@ -27,6 +27,7 @@
 		B239C2A41CE4765E00139005 /* ADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B239C2A31CE4765E00139005 /* ADViewController.m */; };
 		B2D5CB621CE5769700E9F9E3 /* ADsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5CB601CE5769700E9F9E3 /* ADsViewController.m */; };
 		B2D5CB631CE5769700E9F9E3 /* ADsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D5CB611CE5769700E9F9E3 /* ADsViewController.xib */; };
+		B2D5CB651CE57A9F00E9F9E3 /* ADDocument.md in Resources */ = {isa = PBXBuildFile; fileRef = B2D5CB641CE57A9F00E9F9E3 /* ADDocument.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		B2D5CB5F1CE5769700E9F9E3 /* ADsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADsViewController.h; sourceTree = "<group>"; };
 		B2D5CB601CE5769700E9F9E3 /* ADsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADsViewController.m; sourceTree = "<group>"; };
 		B2D5CB611CE5769700E9F9E3 /* ADsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADsViewController.xib; sourceTree = "<group>"; };
+		B2D5CB641CE57A9F00E9F9E3 /* ADDocument.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ADDocument.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				B239C24D1CE46C5B00139005 /* main.m */,
+				B2D5CB641CE57A9F00E9F9E3 /* ADDocument.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			files = (
 				B239C25C1CE46C5B00139005 /* LaunchScreen.storyboard in Resources */,
 				B2D5CB631CE5769700E9F9E3 /* ADsViewController.xib in Resources */,
+				B2D5CB651CE57A9F00E9F9E3 /* ADDocument.md in Resources */,
 				B239C2591CE46C5B00139005 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,7 @@
 #import "DownLoadADImageInfo.h"
 #import "ADViewController.h"
 
-#define ADUrlString @"http://img4.duitang.com/uploads/item/201409/23/20140923093648_JaPhH.jpeg"//广告接口
+#define ADUrlString @"http://img5.duitang.com/uploads/item/201410/05/20141005122027_vz8hV.jpeg"//广告接口
 
 @implementation ADHelper
 
@@ -28,9 +28,10 @@
 //        NSString *infoTitle = [dic objectForKey:@"description"];
 //        NSString *imageUrl = [dict objectForKey:@"url"];
         NSString *imageUrl = ADUrlString;
-        NSString *downId = @"1";//下载获取Id
+        NSString *downId = @"0";//下载获取Id
         NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
         [ud setObject:downId forKey:@"kUDEgyptAdDownload"];
+        [ud setObject:@"0" forKey:@"kUDEgyptAdCatagoryId"];
 //        [ud setObject:mainTitle forKey:@"kUDEgyptAdMainTitle"];
 //        [ud setObject:infoTitle forKey:@"kUDEgyptAdInfoTitle"];
         [ud setObject:imageUrl forKey:@"kUDEgyptAdImageUrl"];

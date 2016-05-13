@@ -17,9 +17,10 @@
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     NSString *adDownloadId = [ud objectForKey:@"kUDEgyptAdDownload"];
     NSString *adCatagoryId = [ud objectForKey:@"kUDEgyptAdCatagoryId"];
-    
+    NSLog(@"%@  %@",adDownloadId,adCatagoryId);
     if (![adDownloadId isEqualToString:adCatagoryId]&& adCatagoryId.length > 0) {
         [ud setObject:adCatagoryId forKey:@"kUDEgyptAdDownload"];
+        
         [ud synchronize];
         NSString *urlString = [ud objectForKey:@"kUDEgyptAdImageUrl"];
         AFHTTPSessionManager *mgr=[AFHTTPSessionManager manager];
