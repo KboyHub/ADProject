@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ADHelper.h"
-#import "ViewController.h"
+#import "ADsViewController.h"
 
 
 @interface AppDelegate ()
@@ -26,8 +26,9 @@
     ADHelper *helper = [[ADHelper alloc]init];
     [helper getTheAdInformation];
     
-    ViewController * rootVC=[[ViewController alloc]init];
-    self.window.rootViewController = rootVC;
+    ADsViewController * rootVC=[[ADsViewController alloc]init];
+    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:rootVC];
+    self.window.rootViewController = navi;
     [self.window makeKeyAndVisible];
     
     return YES;

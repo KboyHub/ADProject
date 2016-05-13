@@ -10,7 +10,7 @@
 #import "DownLoadADImageInfo.h"
 #import "ADViewController.h"
 
-#define ADUrlString @"http://192.168.0.2:8011/api/sourceIOSDianPing/v1.0/StartPage"//广告接口
+#define ADUrlString @"http://img4.duitang.com/uploads/item/201409/23/20140923093648_JaPhH.jpeg"//广告接口
 
 @implementation ADHelper
 
@@ -31,7 +31,6 @@
         NSString *downId = @"1";//下载获取Id
         NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
         [ud setObject:downId forKey:@"kUDEgyptAdDownload"];
-        [ud setObject:@"0" forKey:@"kUDEgyptAdCatagoryId"];
 //        [ud setObject:mainTitle forKey:@"kUDEgyptAdMainTitle"];
 //        [ud setObject:infoTitle forKey:@"kUDEgyptAdInfoTitle"];
         [ud setObject:imageUrl forKey:@"kUDEgyptAdImageUrl"];

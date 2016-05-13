@@ -32,8 +32,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor redColor]];
     [self initWithAdsView];
-    [self performSelector:@selector(goToHomePage) withObject:nil afterDelay:3];
+    [self performSelector:@selector(goToHomePage) withObject:nil afterDelay:2];//2秒消失
     
 }
 
@@ -50,13 +51,11 @@
     BOOL isDir = FALSE;
     BOOL isExit = [fileManager fileExistsAtPath:filePath isDirectory:&isDir];
     if (isExit) {
-        NSLog(@"the imagePath is ==========%@", filePath);
         NSLog(@"存在");
         [self.adsImageView setImage:[UIImage imageWithContentsOfFile:filePath]];
     }
     
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    
     self.adsImageView.userInteractionEnabled = YES;
     
     //布局。。。。
@@ -80,8 +79,6 @@
         self.view.frame = frame;
         self.view.alpha = 0.0;
     } completion:^(BOOL finished) {
-        
-        
         //
         self.window = nil;
     }];

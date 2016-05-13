@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		B239C24E1CE46C5B00139005 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B239C24D1CE46C5B00139005 /* main.m */; };
 		B239C2511CE46C5B00139005 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B239C2501CE46C5B00139005 /* AppDelegate.m */; };
-		B239C2541CE46C5B00139005 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B239C2531CE46C5B00139005 /* ViewController.m */; };
-		B239C2571CE46C5B00139005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B239C2551CE46C5B00139005 /* Main.storyboard */; };
 		B239C2591CE46C5B00139005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B239C2581CE46C5B00139005 /* Assets.xcassets */; };
 		B239C25C1CE46C5B00139005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B239C25A1CE46C5B00139005 /* LaunchScreen.storyboard */; };
 		B239C2671CE46C5B00139005 /* ADProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B239C2661CE46C5B00139005 /* ADProjectTests.m */; };
@@ -27,6 +25,8 @@
 		B239C29E1CE46DF100139005 /* ADHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B239C29D1CE46DF100139005 /* ADHelper.m */; };
 		B239C2A11CE471AF00139005 /* DownLoadADImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B239C2A01CE471AF00139005 /* DownLoadADImageInfo.m */; };
 		B239C2A41CE4765E00139005 /* ADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B239C2A31CE4765E00139005 /* ADViewController.m */; };
+		B2D5CB621CE5769700E9F9E3 /* ADsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5CB601CE5769700E9F9E3 /* ADsViewController.m */; };
+		B2D5CB631CE5769700E9F9E3 /* ADsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D5CB611CE5769700E9F9E3 /* ADsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +51,6 @@
 		B239C24D1CE46C5B00139005 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B239C24F1CE46C5B00139005 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B239C2501CE46C5B00139005 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B239C2521CE46C5B00139005 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B239C2531CE46C5B00139005 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B239C2561CE46C5B00139005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B239C2581CE46C5B00139005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B239C25B1CE46C5B00139005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B239C25D1CE46C5B00139005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +85,9 @@
 		B239C2A01CE471AF00139005 /* DownLoadADImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadADImageInfo.m; sourceTree = "<group>"; };
 		B239C2A21CE4765E00139005 /* ADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADViewController.h; sourceTree = "<group>"; };
 		B239C2A31CE4765E00139005 /* ADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADViewController.m; sourceTree = "<group>"; };
+		B2D5CB5F1CE5769700E9F9E3 /* ADsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADsViewController.h; sourceTree = "<group>"; };
+		B2D5CB601CE5769700E9F9E3 /* ADsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADsViewController.m; sourceTree = "<group>"; };
+		B2D5CB611CE5769700E9F9E3 /* ADsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,15 +138,13 @@
 		B239C24B1CE46C5B00139005 /* ADProject */ = {
 			isa = PBXGroup;
 			children = (
+				B2D5CB5F1CE5769700E9F9E3 /* ADsViewController.h */,
+				B2D5CB601CE5769700E9F9E3 /* ADsViewController.m */,
+				B2D5CB611CE5769700E9F9E3 /* ADsViewController.xib */,
 				B239C2A51CE47E3300139005 /* ADTool */,
 				B239C27F1CE46D8E00139005 /* AFNetworking */,
 				B239C24F1CE46C5B00139005 /* AppDelegate.h */,
 				B239C2501CE46C5B00139005 /* AppDelegate.m */,
-				B239C2521CE46C5B00139005 /* ViewController.h */,
-				B239C2531CE46C5B00139005 /* ViewController.m */,
-				B239C2A21CE4765E00139005 /* ADViewController.h */,
-				B239C2A31CE4765E00139005 /* ADViewController.m */,
-				B239C2551CE46C5B00139005 /* Main.storyboard */,
 				B239C2581CE46C5B00139005 /* Assets.xcassets */,
 				B239C25A1CE46C5B00139005 /* LaunchScreen.storyboard */,
 				B239C25D1CE46C5B00139005 /* Info.plist */,
@@ -210,6 +208,8 @@
 		B239C2A51CE47E3300139005 /* ADTool */ = {
 			isa = PBXGroup;
 			children = (
+				B239C2A21CE4765E00139005 /* ADViewController.h */,
+				B239C2A31CE4765E00139005 /* ADViewController.m */,
 				B239C29C1CE46DF100139005 /* ADHelper.h */,
 				B239C29D1CE46DF100139005 /* ADHelper.m */,
 				B239C29F1CE471AF00139005 /* DownLoadADImageInfo.h */,
@@ -322,8 +322,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B239C25C1CE46C5B00139005 /* LaunchScreen.storyboard in Resources */,
+				B2D5CB631CE5769700E9F9E3 /* ADsViewController.xib in Resources */,
 				B239C2591CE46C5B00139005 /* Assets.xcassets in Resources */,
-				B239C2571CE46C5B00139005 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +349,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B239C2931CE46D8E00139005 /* AFHTTPRequestOperation.m in Sources */,
-				B239C2541CE46C5B00139005 /* ViewController.m in Sources */,
 				B239C2941CE46D8E00139005 /* AFHTTPRequestOperationManager.m in Sources */,
 				B239C2961CE46D8E00139005 /* AFNetworkReachabilityManager.m in Sources */,
 				B239C2A41CE4765E00139005 /* ADViewController.m in Sources */,
@@ -360,6 +359,7 @@
 				B239C2A11CE471AF00139005 /* DownLoadADImageInfo.m in Sources */,
 				B239C2991CE46D8E00139005 /* AFURLRequestSerialization.m in Sources */,
 				B239C29B1CE46D8E00139005 /* AFURLSessionManager.m in Sources */,
+				B2D5CB621CE5769700E9F9E3 /* ADsViewController.m in Sources */,
 				B239C29E1CE46DF100139005 /* ADHelper.m in Sources */,
 				B239C2511CE46C5B00139005 /* AppDelegate.m in Sources */,
 				B239C24E1CE46C5B00139005 /* main.m in Sources */,
@@ -398,14 +398,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B239C2551CE46C5B00139005 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B239C2561CE46C5B00139005 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B239C25A1CE46C5B00139005 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -590,6 +582,7 @@
 				B239C2781CE46C5B00139005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B239C2791CE46C5B00139005 /* Build configuration list for PBXNativeTarget "ADProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +591,7 @@
 				B239C27B1CE46C5B00139005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B239C27C1CE46C5B00139005 /* Build configuration list for PBXNativeTarget "ADProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -606,6 +600,7 @@
 				B239C27E1CE46C5B00139005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
