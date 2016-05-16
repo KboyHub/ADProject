@@ -17,7 +17,7 @@
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     NSString *adDownloadId = [ud objectForKey:@"kUDEgyptAdDownload"];
     NSString *adCatagoryId = [ud objectForKey:@"kUDEgyptAdCatagoryId"];
-    NSLog(@"%@  %@",adDownloadId,adCatagoryId);
+    
     if (![adDownloadId isEqualToString:adCatagoryId]&& adCatagoryId.length > 0) {
         [ud setObject:adCatagoryId forKey:@"kUDEgyptAdDownload"];
         
@@ -28,7 +28,13 @@
         mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
         mgr.responseSerializer = [AFHTTPResponseSerializer serializer];
         mgr.requestSerializer = [AFHTTPRequestSerializer serializer];
-        [mgr GET:urlString parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        //时间戳
+        NSDateFormatter *formater = [[NSDateFormatter alloc] init];
+        formater.dateFormat = @"yyyy-MM-dd";
+        NSString *timeStr = [formater stringFromDate:[NSDate date]];
+        NSMutableDictionary *dic=[NSMutableDictionary dictionary];
+        dic[@"time"]=timeStr;
+        [mgr GET:urlString parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
             NSData *data = responseObject;
             //删除原图片
             [self deleteCacheAdImageData];

@@ -7,6 +7,7 @@
 //
 
 #import "ADsViewController.h"
+#import "ADDetailViewController.h"
 
 @interface ADsViewController ()
 
@@ -19,19 +20,19 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [UIApplication sharedApplication].applicationIconBadgeNumber=0;
+   
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushToADDetail) name:@"kUDEgyptAdResponse" object:nil];
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)pushToADDetail{
+    ADDetailViewController *adDetailVC = [[ADDetailViewController alloc]init];
+    [self.navigationController pushViewController:adDetailVC animated:YES];
 }
-*/
 
 @end

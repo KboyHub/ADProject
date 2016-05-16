@@ -11,7 +11,6 @@
 
 @interface ADHelper : NSObject
 
-- (void)adInfoUrl:(NSString *)urlString params:(NSDictionary *)params success:(void (^)(NSDictionary *))success;
 
 //获取广告信息
 - (void)getTheAdInformation;

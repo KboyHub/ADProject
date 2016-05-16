@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B223BBA31CE959A500C227BC /* ADDocument.md in Sources */ = {isa = PBXBuildFile; fileRef = B223BBA21CE959A500C227BC /* ADDocument.md */; };
+		B223BBB81CE997ED00C227BC /* ADDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B223BBB71CE997ED00C227BC /* ADDetailViewController.m */; };
 		B239C24E1CE46C5B00139005 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B239C24D1CE46C5B00139005 /* main.m */; };
 		B239C2511CE46C5B00139005 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B239C2501CE46C5B00139005 /* AppDelegate.m */; };
 		B239C2591CE46C5B00139005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B239C2581CE46C5B00139005 /* Assets.xcassets */; };
@@ -27,7 +29,6 @@
 		B239C2A41CE4765E00139005 /* ADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B239C2A31CE4765E00139005 /* ADViewController.m */; };
 		B2D5CB621CE5769700E9F9E3 /* ADsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5CB601CE5769700E9F9E3 /* ADsViewController.m */; };
 		B2D5CB631CE5769700E9F9E3 /* ADsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D5CB611CE5769700E9F9E3 /* ADsViewController.xib */; };
-		B2D5CB651CE57A9F00E9F9E3 /* ADDocument.md in Resources */ = {isa = PBXBuildFile; fileRef = B2D5CB641CE57A9F00E9F9E3 /* ADDocument.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B223BBA21CE959A500C227BC /* ADDocument.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ADDocument.md; sourceTree = "<group>"; };
+		B223BBB61CE997ED00C227BC /* ADDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADDetailViewController.h; sourceTree = "<group>"; };
+		B223BBB71CE997ED00C227BC /* ADDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADDetailViewController.m; sourceTree = "<group>"; };
 		B239C2491CE46C5900139005 /* ADProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B239C24D1CE46C5B00139005 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B239C24F1CE46C5B00139005 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,7 +93,6 @@
 		B2D5CB5F1CE5769700E9F9E3 /* ADsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADsViewController.h; sourceTree = "<group>"; };
 		B2D5CB601CE5769700E9F9E3 /* ADsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADsViewController.m; sourceTree = "<group>"; };
 		B2D5CB611CE5769700E9F9E3 /* ADsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADsViewController.xib; sourceTree = "<group>"; };
-		B2D5CB641CE57A9F00E9F9E3 /* ADDocument.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ADDocument.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				B239C24D1CE46C5B00139005 /* main.m */,
-				B2D5CB641CE57A9F00E9F9E3 /* ADDocument.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -211,6 +213,9 @@
 		B239C2A51CE47E3300139005 /* ADTool */ = {
 			isa = PBXGroup;
 			children = (
+				B223BBB61CE997ED00C227BC /* ADDetailViewController.h */,
+				B223BBB71CE997ED00C227BC /* ADDetailViewController.m */,
+				B223BBA21CE959A500C227BC /* ADDocument.md */,
 				B239C2A21CE4765E00139005 /* ADViewController.h */,
 				B239C2A31CE4765E00139005 /* ADViewController.m */,
 				B239C29C1CE46DF100139005 /* ADHelper.h */,
@@ -218,7 +223,7 @@
 				B239C29F1CE471AF00139005 /* DownLoadADImageInfo.h */,
 				B239C2A01CE471AF00139005 /* DownLoadADImageInfo.m */,
 			);
-			name = ADTool;
+			path = ADTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,7 +331,6 @@
 			files = (
 				B239C25C1CE46C5B00139005 /* LaunchScreen.storyboard in Resources */,
 				B2D5CB631CE5769700E9F9E3 /* ADsViewController.xib in Resources */,
-				B2D5CB651CE57A9F00E9F9E3 /* ADDocument.md in Resources */,
 				B239C2591CE46C5B00139005 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B223BBA31CE959A500C227BC /* ADDocument.md in Sources */,
 				B239C2931CE46D8E00139005 /* AFHTTPRequestOperation.m in Sources */,
 				B239C2941CE46D8E00139005 /* AFHTTPRequestOperationManager.m in Sources */,
 				B239C2961CE46D8E00139005 /* AFNetworkReachabilityManager.m in Sources */,
@@ -363,6 +368,7 @@
 				B239C2A11CE471AF00139005 /* DownLoadADImageInfo.m in Sources */,
 				B239C2991CE46D8E00139005 /* AFURLRequestSerialization.m in Sources */,
 				B239C29B1CE46D8E00139005 /* AFURLSessionManager.m in Sources */,
+				B223BBB81CE997ED00C227BC /* ADDetailViewController.m in Sources */,
 				B2D5CB621CE5769700E9F9E3 /* ADsViewController.m in Sources */,
 				B239C29E1CE46DF100139005 /* ADHelper.m in Sources */,
 				B239C2511CE46C5B00139005 /* AppDelegate.m in Sources */,
