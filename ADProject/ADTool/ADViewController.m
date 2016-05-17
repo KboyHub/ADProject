@@ -41,7 +41,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor redColor]];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     [self initWithAdsView];
   //  [self performSelector:@selector(goToHomePage) withObject:nil afterDelay:3];//2秒消失
     
@@ -51,6 +51,7 @@
 {
     
     self.adsImageView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.adsImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.timeBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     self.timeBtn.frame = CGRectMake(kScreenW-40, 25, 30, 30);
     self.timeBtn.titleLabel.font=[UIFont systemFontOfSize:21.0];

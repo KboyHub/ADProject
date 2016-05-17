@@ -35,4 +35,9 @@
     [self.navigationController pushViewController:adDetailVC animated:YES];
 }
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"kUDEgyptAdResponse" object:nil];
+}
+
+
 @end
