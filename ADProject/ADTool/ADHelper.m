@@ -10,7 +10,7 @@
 #import "DownLoadADImageInfo.h"
 #import "ADViewController.h"
 
-#define ADUrlString @"http://api.shiandianping.com/api/sourceIOSDianPing/v1.0/StartPageInfo"//广告接口
+#define ADUrlString @"http://192.168.0.2:8011/api/sourceIOSDianPing/v1.0/StartPageInfo"//广告接口
 
 @implementation ADHelper
 

@@ -24,12 +24,12 @@
     self.title = @"广告详情";
     
      NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    self.bannerUrlStr = [ud objectForKey:@"kUDEgyptAdDetailShow"];
-
+//    self.bannerUrlStr = [ud objectForKey:@"kUDEgyptAdDetailShow"];
+    self.bannerUrlStr = @"http://www.shiandianping.com/H5/OilActivity";
     self.bannerWebView = [[UIWebView alloc]init];
-    self.bannerWebView.frame = CGRectMake(0, 0, kScreenW, kScreenH-64);
+    self.bannerWebView.frame = CGRectMake(0, 0, kScreenW, kScreenH);
     self.bannerWebView.delegate = self;
-    self.bannerWebView.scrollView.bounces = NO;
+    self.bannerWebView.scrollView.bounces = YES;
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.bannerUrlStr]];
     [self.bannerWebView loadRequest:request];
     [self.view addSubview:self.bannerWebView];
