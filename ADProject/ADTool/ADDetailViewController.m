@@ -27,7 +27,7 @@
     self.bannerUrlStr = [ud objectForKey:@"kUDEgyptAdDetailShow"];
 
     self.bannerWebView = [[UIWebView alloc]init];
-    self.bannerWebView.frame = CGRectMake(0, 0, kScreenW, kScreenH);
+    self.bannerWebView.frame = CGRectMake(0, 0, kScreenW, kScreenH-64);
     self.bannerWebView.delegate = self;
     self.bannerWebView.scrollView.bounces = NO;
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.bannerUrlStr]];
