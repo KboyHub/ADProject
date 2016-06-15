@@ -27,6 +27,7 @@
 		B239C29E1CE46DF100139005 /* ADHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B239C29D1CE46DF100139005 /* ADHelper.m */; };
 		B239C2A11CE471AF00139005 /* DownLoadADImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B239C2A01CE471AF00139005 /* DownLoadADImageInfo.m */; };
 		B239C2A41CE4765E00139005 /* ADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B239C2A31CE4765E00139005 /* ADViewController.m */; };
+		B284E5B01D10F9BF00DDA370 /* UIImage+ImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = B284E5AF1D10F9BF00DDA370 /* UIImage+ImageSize.m */; };
 		B2D5CB621CE5769700E9F9E3 /* ADsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D5CB601CE5769700E9F9E3 /* ADsViewController.m */; };
 		B2D5CB631CE5769700E9F9E3 /* ADsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D5CB611CE5769700E9F9E3 /* ADsViewController.xib */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,8 @@
 		B239C2A01CE471AF00139005 /* DownLoadADImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadADImageInfo.m; sourceTree = "<group>"; };
 		B239C2A21CE4765E00139005 /* ADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADViewController.h; sourceTree = "<group>"; };
 		B239C2A31CE4765E00139005 /* ADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADViewController.m; sourceTree = "<group>"; };
+		B284E5AE1D10F9BF00DDA370 /* UIImage+ImageSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageSize.h"; sourceTree = "<group>"; };
+		B284E5AF1D10F9BF00DDA370 /* UIImage+ImageSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageSize.m"; sourceTree = "<group>"; };
 		B2D5CB5F1CE5769700E9F9E3 /* ADsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADsViewController.h; sourceTree = "<group>"; };
 		B2D5CB601CE5769700E9F9E3 /* ADsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADsViewController.m; sourceTree = "<group>"; };
 		B2D5CB611CE5769700E9F9E3 /* ADsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADsViewController.xib; sourceTree = "<group>"; };
@@ -213,6 +216,8 @@
 		B239C2A51CE47E3300139005 /* ADTool */ = {
 			isa = PBXGroup;
 			children = (
+				B284E5AE1D10F9BF00DDA370 /* UIImage+ImageSize.h */,
+				B284E5AF1D10F9BF00DDA370 /* UIImage+ImageSize.m */,
 				B223BBB61CE997ED00C227BC /* ADDetailViewController.h */,
 				B223BBB71CE997ED00C227BC /* ADDetailViewController.m */,
 				B223BBA21CE959A500C227BC /* ADDocument.md */,
@@ -368,6 +373,7 @@
 				B239C2A11CE471AF00139005 /* DownLoadADImageInfo.m in Sources */,
 				B239C2991CE46D8E00139005 /* AFURLRequestSerialization.m in Sources */,
 				B239C29B1CE46D8E00139005 /* AFURLSessionManager.m in Sources */,
+				B284E5B01D10F9BF00DDA370 /* UIImage+ImageSize.m in Sources */,
 				B223BBB81CE997ED00C227BC /* ADDetailViewController.m in Sources */,
 				B2D5CB621CE5769700E9F9E3 /* ADsViewController.m in Sources */,
 				B239C29E1CE46DF100139005 /* ADHelper.m in Sources */,

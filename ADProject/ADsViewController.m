@@ -10,6 +10,11 @@
 #import "ADDetailViewController.h"
 
 @interface ADsViewController ()
+{
+    NSTimer *countDownTimer;
+}
+@property (assign, nonatomic) NSInteger secondsCountDown; //倒计时总时长
+@property (weak, nonatomic) IBOutlet UIButton *skipBtn;
 
 @end
 
@@ -17,12 +22,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    _secondsCountDown = 4;
+    
 }
+
+- (void)onTimer {
+    
+   
+    if (_secondsCountDown >=1) {
+        _secondsCountDown--;
+        [self.skipBtn setTitle:[NSString stringWithFormat:@"%.2ld跳过",(long)_secondsCountDown] forState:UIControlStateNormal];
+    }else{
+        
+        [countDownTimer invalidate];
+        countDownTimer = nil;
+        
+    }
+}
+
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    countDownTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
     [UIApplication sharedApplication].applicationIconBadgeNumber=0;
    
     

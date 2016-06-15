@@ -63,7 +63,8 @@
                                                           error:&err];
     if ([dic[@"Status"] integerValue]== 1) {
         //
-        NSString *imageUrl = dic[@"Data"];
+//        NSString *imageUrl = dic[@"Data"];
+        NSString *imageUrl = @"http://www.uisheji.com/wp-content/uploads/2013/04/19/app-design-uisheji-ui-icon20121_55.jpg";
         NSString *downId = @"1";//下载获取Id
         NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
         [ud setObject:downId forKey:@"kUDEgyptAdDownload"];

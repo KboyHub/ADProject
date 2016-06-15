@@ -8,6 +8,7 @@
 
 #import "ADViewController.h"
 #import "AppDelegate.h"
+#import "UIImage+ImageSize.h"
 
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 
@@ -62,8 +63,8 @@
     //本地读取
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
     NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:[NSString stringWithFormat:@"loading.png"]];
-    
-    [self.adsImageView setImage:[UIImage imageWithContentsOfFile:filePath]];
+    UIImage *sourceImage =[UIImage imageWithContentsOfFile:filePath];
+    [self.adsImageView setImage:[sourceImage imageCompressForWidth:sourceImage targetWidth:kScreenW]];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(nextADDetailTap:)];
     [self.adsImageView addGestureRecognizer:tap];
     [self startTime];
